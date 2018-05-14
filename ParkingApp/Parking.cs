@@ -17,14 +17,14 @@ namespace ParkingApp
         public Settings Settings { get; }
         public CarType CarType { get; }
 
-        public Parking()
+        public Parking(Settings instance)
         {
             CarList = new List<Car>();
             LastAddedCarId = 0;
             TransactionList = new List<Transaction>();
             EarnedMoney = 0;
             LastMinuteMoney = 0;
-            Settings = Settings.Instance;
+            Settings = instance;
             CarType = new CarType();
         }
 

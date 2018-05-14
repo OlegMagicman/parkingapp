@@ -16,7 +16,7 @@ namespace ParkingApp
 
         public CarType()
         {
-            CarList = new Dictionary<int, string>
+			CarList = new Dictionary<int, string>
             {
                 [Passager] = "Passager",
                 [Truck] = "Truck",
